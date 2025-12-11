@@ -50,14 +50,14 @@ Sistem ini memiliki pembagian hak akses (Role) yang jelas:
 
 ---
 
-##🔐 Akun Demo (Default)
+## 🔐 Akun Demo (Default)
 Role: admin
 Username: Riokecap
 Password:123123123
 
 ---
 
-##📄 Referensi
+## 📄 Referensi
 Project ini dikembangkan berdasarkan studi kasus pada jurnal: Kurniawan, D., Handayani, T., & Sa'diah, H. (2024). Perancangan Sistem Informasi Rental Kamera Berbasis Java Netbeans di Jepret Blur Depok. Jurnal Riset dan Aplikasi Mahasiswa Informatika (JRAMI).
 
 ---
