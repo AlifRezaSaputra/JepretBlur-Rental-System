@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jepretblur.controller.TransaksiSewaController">
+   <children>
+      <VBox layoutX="100.0" layoutY="30.0" prefWidth="400.0" spacing="15.0" style="-fx-background-color: white; -fx-padding: 20; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);">
+         <children>
+            <Label text="Form Penyewaan Kamera" textFill="#2c3e50">
+               <font><Font name="System Bold" size="20.0" /></font>
+            </Label>
+            
+            <Label text="Pilih Pelanggan" />
+            <ComboBox fx:id="comboPelanggan" prefWidth="400.0" promptText="-- Cari Pelanggan --" />
+            
+            <Label text="Pilih Kamera" />
+            <ComboBox fx:id="comboKamera" prefWidth="400.0" promptText="-- Cari Kamera --" />
+            
+            <Label text="Tanggal Sewa" />
+            <DatePicker fx:id="dateSewa" prefWidth="400.0" />
+            
+            <Label text="Tanggal Kembali" />
+            <DatePicker fx:id="dateKembali" prefWidth="400.0" />
+            
+            <Label text="Total Harga (Otomatis)" />
+            <TextField fx:id="txtTotal" editable="false" style="-fx-background-color: #ecf0f1;" text="0" />
+            
+            <Button onAction="#hitungTotal" text="Hitung Estimasi Harga" maxWidth="Infinity" style="-fx-background-color: #3498db; -fx-text-fill: white;"/>
+            
+            <Button onAction="#simpanTransaksi" prefHeight="40.0" style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold;" text="PROSES SEWA" maxWidth="Infinity" />
+            
+            <Button onAction="#kembali" style="-fx-background-color: transparent; -fx-text-fill: #7f8c8d;" text="Batal / Kembali" underline="true" maxWidth="Infinity" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

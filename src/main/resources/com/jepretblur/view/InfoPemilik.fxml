@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jepretblur.controller.InfoPemilikController">
+   <children>
+      <VBox spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <Label text="Status Kamera Anda" textFill="#2c3e50"><font><Font name="System Bold" size="20.0" /></font></Label>
+         <TableView fx:id="tableStatus" VBox.vgrow="ALWAYS">
+           <columns>
+             <TableColumn fx:id="colKamera" prefWidth="200.0" text="Kamera" />
+             <TableColumn fx:id="colPenyewa" prefWidth="200.0" text="Sedang Dipinjam Oleh" />
+             <TableColumn fx:id="colDurasi" prefWidth="150.0" text="Jadwal Kembali" />
+           </columns>
+         </TableView>
+         <Button onAction="#kembali" text="Kembali ke Dashboard" />
+      </VBox>
+   </children>
+</AnchorPane>

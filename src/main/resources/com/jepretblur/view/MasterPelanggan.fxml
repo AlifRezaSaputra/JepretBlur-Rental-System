@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jepretblur.controller.MasterPelangganController">
+   <children>
+      <VBox spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label text="Master Data Pelanggan" textFill="#2c3e50">
+               <font><Font name="System Bold" size="24.0" /></font>
+            </Label>
+            
+            <HBox spacing="20.0" VBox.vgrow="ALWAYS">
+               <children>
+                   <TableView fx:id="pelangganTable" HBox.hgrow="ALWAYS">
+                     <columns>
+                       <TableColumn fx:id="colId" prefWidth="40.0" text="ID" />
+                       <TableColumn fx:id="colKtp" prefWidth="120.0" text="No KTP" />
+                       <TableColumn fx:id="colNama" prefWidth="150.0" text="Nama Lengkap" />
+                       <TableColumn fx:id="colHp" prefWidth="100.0" text="No HP" />
+                       <TableColumn fx:id="colAlamat" prefWidth="200.0" text="Alamat" />
+                     </columns>
+                   </TableView>
+                   
+                   <VBox prefWidth="300.0" spacing="10.0" style="-fx-background-color: #ecf0f1; -fx-padding: 15; -fx-background-radius: 5;">
+                      <children>
+                         <Label text="Form Pelanggan">
+                            <font><Font name="System Bold" size="14.0" /></font>
+                         </Label>
+                         <TextField fx:id="txtKtp" promptText="Nomor KTP" />
+                         <TextField fx:id="txtNama" promptText="Nama Lengkap" />
+                         <TextField fx:id="txtHp" promptText="Nomor HP" />
+                         <TextArea fx:id="txtAlamat" prefHeight="80.0" promptText="Alamat Lengkap" wrapText="true" />
+                         
+                         <HBox spacing="10.0" alignment="CENTER">
+                             <children>
+                                 <Button onAction="#simpan" text="Simpan" style="-fx-background-color: #2ecc71; -fx-text-fill: white;"/>
+                                 <Button onAction="#update" text="Update" style="-fx-background-color: #f1c40f; -fx-text-fill: black;"/>
+                                 <Button onAction="#hapus" text="Hapus" style="-fx-background-color: #e74c3c; -fx-text-fill: white;"/>
+                             </children>
+                         </HBox>
+                         
+                         <Button onAction="#clear" text="Bersihkan" maxWidth="Infinity"/>
+                         <Button onAction="#kembali" text="Kembali ke Menu" maxWidth="Infinity" style="-fx-margin-top: 20;"/>
+                      </children>
+                   </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

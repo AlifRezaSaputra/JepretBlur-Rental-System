@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jepretblur.controller.InputKameraController">
+   <children>
+      <VBox spacing="15.0" layoutX="150.0" layoutY="50.0" prefWidth="300.0">
+         <Label text="Titip Kamera Anda" textFill="#2c3e50"><font><Font name="System Bold" size="20.0" /></font></Label>
+         <Label text="Silakan input data unit kamera. Admin akan menentukan harga sewa." wrapText="true" textFill="#7f8c8d"/>
+         
+         <TextField fx:id="txtMerk" promptText="Merk (Contoh: Sony)" />
+         <TextField fx:id="txtTipe" promptText="Tipe (Contoh: A6400)" />
+         <TextField fx:id="txtStok" promptText="Jumlah Unit" />
+         
+         <Button onAction="#simpanKamera" text="Ajukan Kamera" maxWidth="Infinity" style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold;"/>
+         <Button onAction="#kembali" text="Kembali ke Dashboard" maxWidth="Infinity"/>
+      </VBox>
+   </children>
+</AnchorPane>

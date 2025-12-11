@@ -1,0 +1,45 @@
+.root-pane {
+    -fx-background-color: #ecf0f1; /* Abu-abu muda */
+}
+
+.login-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+.text-field, .password-field {
+    -fx-background-radius: 5;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 5;
+    -fx-padding: 8;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #2ecc71; /* Hijau pas diklik */
+}
+
+.btn-primary {
+    -fx-background-color: #2ecc71; /* Hijau Jepret Blur */
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #27ae60; /* Hijau lebih gelap pas di-hover */
+}
+
+.btn-sidebar {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 0 10 20; /* Atas Kanan Bawah Kiri */
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.btn-sidebar:hover {
+    -fx-background-color: #34495e; /* Warna agak terang pas hover */
+    -fx-border-color: #2ecc71;
+    -fx-border-width: 0 0 0 5; /* Garis hijau di kiri */
+}

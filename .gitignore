@@ -1,0 +1,16 @@
+# Maven build folder (JANGAN DIUPLOAD)
+target/
+*.log
+
+# IDE settings (JANGAN DIUPLOAD)
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+bin/
+
+# OS files
+.DS_Store
+Thumbs.db
